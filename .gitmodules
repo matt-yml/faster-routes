@@ -1,0 +1,4 @@
+[submodule "MADUtilities"]
+	path = MADUtilities
+	url = https://github.com/Tabbomat/MADUtilities.git
+	branch = master
