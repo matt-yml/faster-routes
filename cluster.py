@@ -103,7 +103,14 @@ def get_spawns():
     area.append(area[0])
     area = ",".join(area)
     cursor = connection.cursor()
-    query = f"select id, lat, lon from gym where ST_CONTAINS(ST_GEOMFROMTEXT('POLYGON(({area}))'), point(lat, lon)) order by lon, lat"
+    
+    # Add gym and spawnpoint option from config.json
+    # gym or spawnpoint valid options
+    
+    print(f"poitype= " + config["poitype"])
+    query = f"select id, lat, lon from " + config["poitype"] + f" where ST_CONTAINS(ST_GEOMFROMTEXT('POLYGON(({area}))'), point(lat, lon)) order by lon, lat"
+    print(f"query= " + query)
+    
     cursor.execute(query)
 
     r = cursor.fetchall()

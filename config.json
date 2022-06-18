@@ -4,6 +4,7 @@
     "password": "passwordRO",
     "db_name": "rdmdb",
     "port": 3308,
+    "poitype": "spawnpoint",
 
     "max_distance_between_spawns": 500,
     "view_distance": 500,
