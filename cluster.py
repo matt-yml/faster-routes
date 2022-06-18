@@ -103,7 +103,7 @@ def get_spawns():
     area.append(area[0])
     area = ",".join(area)
     cursor = connection.cursor()
-    query = f"select spawnpoint, latitude, longitude from trs_spawn where ST_CONTAINS(ST_GEOMFROMTEXT('POLYGON(({area}))'), point(latitude, longitude)) and eventid = 1 order by longitude, latitude"
+    query = f"select id, lat, lon from spawnpoint where ST_CONTAINS(ST_GEOMFROMTEXT('POLYGON(({area}))'), point(lat, lon)) order by lon, lat"
     cursor.execute(query)
 
     r = cursor.fetchall()
