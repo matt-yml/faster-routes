@@ -1,0 +1,13 @@
+{
+    "host": "rdmdb",
+    "user": "rdm_ro",
+    "password": "passwordRO",
+    "db_name": "rdmdb",
+    "port": 3308,
+
+    "max_distance_between_spawns": 500,
+    "view_distance": 500,
+    "min_total_spawns_in_cluster": 1,
+
+    "min_added_spawns_in_cluster": 1
+}
