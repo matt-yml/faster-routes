@@ -108,7 +108,7 @@ def get_spawns():
     # gym or spawnpoint valid options
     
     print(f"poitype= " + config["poitype"])
-    print(f"spawnpoint status: " + config["time_known"])
+    print(f"spawnpoints known: " + config["time_known"])
     if config["time_known"] == "true":
         time_known = " and despawn_sec IS NOT NULL "
     elif config["time_known"] == "false":
@@ -116,20 +116,18 @@ def get_spawns():
     else:
         time_known = " "
         
-    #query = f"select id, lat, lon from " + config["poitype"] + f" where ST_CONTAINS(ST_GEOMFROMTEXT('POLYGON(({area}))'), point(lat, lon)) and despawn_sec IS NULL order by lon, lat"
     query = f"select id, lat, lon from " + config["poitype"] + f" where ST_CONTAINS(ST_GEOMFROMTEXT('POLYGON(({area}))'), point(lat, lon))" + time_known + "order by lon, lat"
-    print(f"query= " + query)
     
     cursor.execute(query)
 
     r = cursor.fetchall()
     cursor.close()
     connection.close()
-
+    
     spawns = []
     for sid, (ssid, lat, lon) in enumerate(r):
         spawns.append(Spawn(ssid, lat, lon))
-
+    #print(f"Number of spawn points: " + str(len(r)))
     return spawns
 
 spawns = get_spawns()
