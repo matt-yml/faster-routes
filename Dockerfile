@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.10-slim
 
 ## Working directory for the application
 RUN mkdir -p /usr/src/app
