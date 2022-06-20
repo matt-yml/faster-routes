@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 
 
 # Install requirements
-RUN apt-get update -y && apt-get install -y vim git traceroute
+RUN apt-get update -y ### && apt-get install -y vim git traceroute
 
 
 # Get the latest purge code
