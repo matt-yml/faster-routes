@@ -9,6 +9,9 @@ An alternate routecalc algorithm for MAD (made quick and dirty)
 
 ### How to use
 
+Example:
+docker run -it --rm -v "$(pwd)":/usr/src/app -v "$(pwd)"/coords/gso/visible.fence:/usr/src/app/fence.txt faster-routes
+
 This is a recommendation of how to use this script. It requires a bit of setup but the workflow in the end is pretty good. Note that I set up everything (except the MAD instance) on my own computer since it takes quite a bit of computing.
 
 - `git clone https://github.com/ccev/faster-routes.git && cd faster-routes && cp config-example.json config.json`, then fill in the config's db part

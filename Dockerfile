@@ -20,3 +20,7 @@ COPY ./ /usr/src/app/
 # Set Entrypoint with hard-coded options
 #ENTRYPOINT ["ping","8.8.8.8"]
 ENTRYPOINT ["python","cluster.py"]
+
+# Example usage
+# docker run -it --rm -v "$(pwd)":/usr/src/app -v "$(pwd)"/coords/gso/visible.fence:/usr/src/app/fence.txt faster-routes
+
