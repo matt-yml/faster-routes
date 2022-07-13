@@ -5,9 +5,9 @@
     "db_name": "rdmdb",
     "port": 3306,
     "poitype": "spawnpoint",
-    "time_known": "true",
+    "time_known": "false",
 
-    "max_distance_between_spawns": 75,
+    "max_distance_between_spawns": 138,
     "view_distance": 70,
     "min_total_spawns_in_cluster": 1,
 
