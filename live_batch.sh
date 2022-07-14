@@ -15,12 +15,15 @@ cp ${base_fr}/config_sp_kn.json ${base_fr}/config.json
 #fences=("parkwaypnt" "ritterpark" "bond" "cary_cbd" "northwoods" "waverly")
 # CAM
 #fences=("apex_compark" "apex_dt" "danvers" "parkwaypnt" "ritterpark" "bond" "cary_cbd" "northwoods" "waverly")
-
-
 # Raleigh CBD
+#area="raleigh"
 #fences=("ral_CBD")
-area="raleigh_NW"
-fences=("6forks" "crabtree" "glenwood" "neuse" "northhills" "statefair" "trinity")
+# Raleigh NW
+#area="raleigh_NW"
+#fences=("6forks" "crabtree" "glenwood" "neuse" "northhills" "statefair" "trinity")
+# GSO
+area="gso"
+fences=("arbor" "downtown" "friendly" "uncg")
 
 i=0
   for fence in ${!fences[@]}
