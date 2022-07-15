@@ -5,13 +5,35 @@
 base_coords="/home/deve/pk/submodules/faster-routes/coords"
 base_fr="/home/deve/pk/submodules/faster-routes"
 
-# Copy the unknown spawn point config in
-cp ${base_fr}/config_sp_ukn.json ${base_fr}/config.json
+# Map desired config into container
+cfg=${base_fr}/config_sp_ukn.json
 
-/usr/bin/docker run -it --rm -v ${base_fr}:/usr/src/app -v ${base_coords}/z_utils/sp-westcamparks.fence:/usr/src/app/fence.txt faster-routes
-/usr/bin/docker run -it --rm -v ${base_fr}/route.txt:/usr/src/app/infile.txt sct python cluster.py -jsf infile.txt
-cp ${base_fr}/route.txt ${base_fr}/coords/z_utils/sp-westcamparks.route
+### Asheboro
 
-/usr/bin/docker run -it --rm -v ${base_fr}:/usr/src/app -v ${base_coords}/z_utils/sp-craleigh.fence:/usr/src/app/fence.txt faster-routes
+# Specify sub directory
+area=z_utils
+
+# Pick your fence.
+fence=sp-asheboro_expansion
+
+/usr/bin/docker run -it --rm -v ${base_fr}:/usr/src/app -v ${cfg}:/usr/src/app/config.json -v ${base_coords}/${area}/${fence}.fence:/usr/src/app/fence.txt faster-routes
 /usr/bin/docker run -it --rm -v ${base_fr}/route.txt:/usr/src/app/infile.txt sct python cluster.py -jsf infile.txt
-cp ${base_fr}/route.txt ${base_coords}/z_utils/sp-craleigh.route
+cp ${base_fr}/route.txt ${base_fr}/coords/${area}/${fence}.route
+
+# Repeat this stanza as necessary
+
+
+### Durham
+
+# Map desired config into container
+cfg=${base_fr}/config_sp_ukn.json
+
+# Specify sub directory
+area=z_utils
+
+# Pick your fence.
+fence=sp-durham_cbd
+
+/usr/bin/docker run -it --rm -v ${base_fr}:/usr/src/app -v ${cfg}:/usr/src/app/config.json -v ${base_coords}/${area}/${fence}.fence:/usr/src/app/fence.txt faster-routes
+/usr/bin/docker run -it --rm -v ${base_fr}/route.txt:/usr/src/app/infile.txt sct python cluster.py -jsf infile.txt
+cp ${base_fr}/route.txt ${base_fr}/coords/${area}/${fence}.route

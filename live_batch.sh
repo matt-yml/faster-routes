@@ -25,8 +25,11 @@ cp ${base_fr}/config_sp_kn.json ${base_fr}/config.json
 #area="gso"
 #fences=("arbor" "downtown" "friendly" "uncg")
 # Cabarrus
-area="cabarrus"
-fences=("concord_cbd" "kannapolis_cbd" "liskepark")
+#area="cabarrus"
+#fences=("concord_cbd" "kannapolis_cbd" "liskepark")
+# Asheboro
+area="asheboro"
+fences=("cbd" "walmart")
 
 i=0
   for fence in ${!fences[@]}
