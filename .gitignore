@@ -1,4 +1,5 @@
 *.pickle
 *.txt
 test*
-config.json
+*config.json
+*route.txt

@@ -5,8 +5,10 @@
 base_coords="/home/deve/pk/submodules/faster-routes/coords"
 base_fr="/home/deve/pk/submodules/faster-routes"
 
-echo "set config to known points only"
-cp ${base_fr}/config_sp_kn.json ${base_fr}/config.json
+# Map desired config into container
+cfg=${base_fr}/config_sp_kn.json
+echo "Using configuration:"
+cat ${base_fr}/config_sp_kn.json
 
 #area="cam"
 # Apex
@@ -35,10 +37,9 @@ i=0
   for fence in ${!fences[@]}
     do
     echo "routing ${area}/${fences[$fence]}"
-    /usr/bin/docker run -it --rm -v ${base_fr}:/usr/src/app -v ${base_coords}/${area}/${fences[$fence]}.fence:/usr/src/app/fence.txt faster-routes
+    /usr/bin/docker run -it --rm -v ${base_fr}/route.txt:/usr/src/app/route.txt -v ${cfg}:/usr/src/app/config.json -v ${base_coords}/${area}/${fences[$fence]}.fence:/usr/src/app/fence.txt faster-routes
     /usr/bin/docker run -it --rm -v ${base_fr}/route.txt:/usr/src/app/infile.txt sct python cluster.py -jsf infile.txt
-    # Save individual route
-    cp ${base_fr}/route.txt ${base_coords}/${area}/${city}/${fences[$fence]}.route
+    cp ${base_fr}/route.txt ${base_fr}/coords/${area}/${fence}.route
     
     if [ "$i" -eq "0" ];
     then
