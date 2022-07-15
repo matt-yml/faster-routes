@@ -22,13 +22,16 @@ cp ${base_fr}/config_sp_kn.json ${base_fr}/config.json
 #area="raleigh_NW"
 #fences=("6forks" "crabtree" "glenwood" "neuse" "northhills" "statefair" "trinity")
 # GSO
-area="gso"
-fences=("arbor" "downtown" "friendly" "uncg")
+#area="gso"
+#fences=("arbor" "downtown" "friendly" "uncg")
+# Cabarrus
+area="cabarrus"
+fences=("concord_cbd" "kannapolis_cbd" "liskepark")
 
 i=0
   for fence in ${!fences[@]}
     do
-    echo "routing ${area}/${cities[$city]}/${fences[$fence]}"
+    echo "routing ${area}/${fences[$fence]}"
     /usr/bin/docker run -it --rm -v ${base_fr}:/usr/src/app -v ${base_coords}/${area}/${fences[$fence]}.fence:/usr/src/app/fence.txt faster-routes
     /usr/bin/docker run -it --rm -v ${base_fr}/route.txt:/usr/src/app/infile.txt sct python cluster.py -jsf infile.txt
     # Save individual route
