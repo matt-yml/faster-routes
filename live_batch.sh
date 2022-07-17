@@ -30,8 +30,14 @@ cat ${base_fr}/config_sp_kn.json
 #area="cabarrus"
 #fences=("concord_cbd" "kannapolis_cbd" "liskepark")
 # Asheboro
-area="asheboro"
-fences=("cbd" "walmart")
+#area="asheboro"
+#fences=("cbd" "walmart")
+# Chapel Hill
+#area="chapelhill"
+#fences=("cbd" "umall")
+# Durham
+area="durham"
+fences=("downtown" "briercreek" "southpoint")
 
 i=0
   for fence in ${!fences[@]}
