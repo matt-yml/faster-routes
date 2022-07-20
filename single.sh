@@ -14,7 +14,7 @@ base_coords="/home/deve/pk/submodules/faster-routes/coords"
 base_fr="/home/deve/pk/submodules/faster-routes"
 
 # Map desired config into container
-cfg=${base_fr}/config_sp_all.json
+cfg=${base_fr}/config_sp_ukn.json
 
 # Specify sub directory
 area=z_utils
