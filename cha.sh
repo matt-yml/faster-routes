@@ -20,7 +20,7 @@ cfg=${base_fr}/config_sp_ukn.json
 area=z_utils
 
 # Pick your fence.
-fence=sp-cam
+fence=sp-chapelhill
 
 # Turn off the next line to just do sorting, like on a  blanket route
 /usr/bin/docker run -t --rm -v ${base_fr}:/usr/src/app -v ${cfg}:/usr/src/app/config.json -v ${base_coords}/${area}/${fence}.fence:/usr/src/app/fence.txt faster-routes
