@@ -127,7 +127,7 @@ def get_spawns():
     spawns = []
     for sid, (ssid, lat, lon) in enumerate(r):
         spawns.append(Spawn(ssid, lat, lon))
-    #print(f"Number of spawn points: " + str(len(r)))
+    print(f"Number of spawn points: " + str(len(r)))
     return spawns
 
 spawns = get_spawns()
