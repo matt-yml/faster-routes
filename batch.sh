@@ -71,7 +71,7 @@ cfg=${base_fr}/config_sp_ukn.json
 # Specify sub directory
 area=z_utils
 # Pick your fence
-fence=sp-cab
+fence=sp-cab_main
 echo "*****Starting ${fence}*****"
 date
 # Turn off the next line to just do sorting, like on a  blanket route
