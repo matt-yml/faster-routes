@@ -5,13 +5,13 @@
 base_coords="/home/deve/devrepo/coords/maps/pk/volumes/rdm/coords"
 base_fr="/home/deve/devrepo/coords/submodules/faster-routes"
 
-### gso
+### durham
 # Map desired config into container
 cfg=${base_fr}/config_sp_ukn.json
 # Specify sub directory
 area=z_utils
 # Pick your fence.
-fence=sp-gso
+fence=sp-durham
 cat ${cfg}
 echo "area: ${area}"
 echo "fence: ${fence}"
