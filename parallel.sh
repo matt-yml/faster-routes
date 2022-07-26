@@ -5,6 +5,6 @@
 nohup ./cab.sh &> nohup-cab.txt &
 nohup ./cam.sh &> nohup-cam.txt &
 nohup ./cha.sh &> nohup-cha.txt &
-nohup ./durham.sh &> nohup-durham.txt &
+#nohup ./durham.sh &> nohup-durham.txt &
 nohup ./gso.sh &> nohup-gso.txt &
-nohup ./ral.sh &> nohup-ral.txt &
+#nohup ./ral.sh &> nohup-ral.txt &
