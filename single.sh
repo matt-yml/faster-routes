@@ -14,13 +14,13 @@ base_coords="/home/deve/devrepo/coords/maps/pk/volumes/rdm/coords"
 base_fr="/home/deve/devrepo/coords/submodules/faster-routes"
 
 # Map desired config into container
-cfg=${base_fr}/config_sp_ukn.json
+cfg=${base_fr}/config_gym.json
 
 # Specify sub directory
-area=z_utils
+area=rdu
 
 # Pick your fence.
-fence=sp-durham
+fence=visible
 
 echo "*****Starting ${fence}*****"
 date
