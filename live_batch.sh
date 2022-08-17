@@ -2,13 +2,13 @@
 # Automate the routing process. Pass straight to sort
 # NOTE: Docker container that actually runs the scripts must already be built
 
-base_coords="/home/deve/pk/submodules/faster-routes/coords"
-base_fr="/home/deve/pk/submodules/faster-routes"
+base_coords="/home/deve/coords/coords"
+base_fr="/home/deve/coords"
 
 # Map desired config into container
-cfg=${base_fr}/config_sp_kn.json
+cfg=${base_fr}/config_gym.json
 echo "Using configuration:"
-cat ${base_fr}/config_sp_kn.json
+cat ${cfg}
 
 #area="cam"
 # Apex
@@ -36,8 +36,8 @@ cat ${base_fr}/config_sp_kn.json
 #area="chapelhill"
 #fences=("cbd" "umall")
 # Durham
-area="durham"
-fences=("downtown" "briercreek" "southpoint")
+area="cabarrus"
+fences=("cab_main" "cab_spencer" "cab_mtpleasant")
 
 i=0
   for fence in ${!fences[@]}
