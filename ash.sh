@@ -11,7 +11,7 @@ cfg=${base_fr}/config_sp_ukn.json
 # Specify sub directory
 area=z_utils
 # Pick your fence.
-fence=sp-asheboro
+fence=sp-ash_plus_zoo
 cat ${cfg}
 echo "area: ${area}"
 echo "fence: ${fence}"

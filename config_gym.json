@@ -7,7 +7,7 @@
     "poitype": "gym",
     "time_known": "na",
 
-    "max_distance_between_spawns": 1500,
+    "max_distance_between_spawns": 1000,
     "view_distance": 500,
     "min_total_spawns_in_cluster": 1,
 

@@ -9,11 +9,15 @@
 nohup ./ral.sh &> nohup-ral.txt &
 sleep 1
 #nohup ./gso.sh &> nohup-gso.txt &
-sleep 1
-nohup ./cab.sh &> nohup-cab.txt &
-sleep 1
+#sleep 1
+#nohup ./cab.sh &> nohup-cab.txt &
+#sleep 1
 #nohup ./cha.sh &> nohup-cha.txt &
-sleep 1
-nohup ./cam.sh &> nohup-cam.txt &
-sleep 1
+#sleep 1
+#nohup ./cam.sh &> nohup-cam.txt &
+#sleep 1
 #nohup ./durham.sh &> nohup-durham.txt &
+#sleep 1
+nohup ./nr.sh &> nohup-nr.txt &
+sleep 1
+nohup ./wf.sh &> nohup-wf.txt &

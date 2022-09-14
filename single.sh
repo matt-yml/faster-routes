@@ -17,10 +17,10 @@ base_fr="/home/deve/devrepo/coords/submodules/faster-routes"
 cfg=${base_fr}/config_gym.json
 
 # Specify sub directory
-area=rdu
+area=p10
 
 # Pick your fence.
-fence=visible
+fence=00north
 
 echo "*****Starting ${fence}*****"
 date

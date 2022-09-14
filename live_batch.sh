@@ -6,7 +6,7 @@ base_coords="/home/deve/coords/coords"
 base_fr="/home/deve/coords"
 
 # Map desired config into container
-cfg=${base_fr}/config_gym.json
+cfg=${base_fr}/config_sp_kn.json
 echo "Using configuration:"
 cat ${cfg}
 
@@ -19,16 +19,16 @@ cat ${cfg}
 #fences=("apex_compark" "apex_dt" "danvers" "parkwaypnt" "ritterpark" "bond" "cary_cbd" "northwoods" "waverly")
 # Raleigh CBD
 #area="raleigh"
-#fences=("ral_CBD")
+#fences=("ral_CBD" "statefair" "trinity")
 # Raleigh NW
 #area="raleigh_NW"
-#fences=("6forks" "crabtree" "glenwood" "neuse" "northhills" "statefair" "trinity")
+#fences=("dtwf" "6forks" "crabtree" "glenwood" "neuse" "northhills")
 # GSO
 #area="gso"
 #fences=("arbor" "downtown" "friendly" "uncg")
 # Cabarrus
-#area="cabarrus"
-#fences=("concord_cbd" "kannapolis_cbd" "liskepark")
+area="cabarrus"
+fences=("cmills" "concord_cbd" "kannapolis_cbd" "liskepark")
 # Asheboro
 #area="asheboro"
 #fences=("cbd" "walmart")
@@ -36,8 +36,8 @@ cat ${cfg}
 #area="chapelhill"
 #fences=("cbd" "umall")
 # Durham
-area="cabarrus"
-fences=("cab_main" "cab_spencer" "cab_mtpleasant")
+#area="durham"
+#fences=("southpoint" "briercreek" "dtdur" "dukegardens" "maplewood" "atc")
 
 i=0
   for fence in ${!fences[@]}
