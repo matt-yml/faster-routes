@@ -3,3 +3,6 @@
 test*
 *config.json
 *route.txt
+*.out
+*.log
+*.bak
