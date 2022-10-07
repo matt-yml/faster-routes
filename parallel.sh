@@ -21,8 +21,8 @@
 #nohup ./nr.sh &> nohup-nr.txt &
 #sleep 1
 #nohup ./wf.sh &> nohup-wf.txt &
-nohup ./garner.sh &> nohup-garner.txt &
+nohup ./pitts.sh &> nohup-pitts.out &
 sleep 1
-nohup ./kd.sh &> nohup-kd.txt &
+nohup ./hp.sh &> nohup-hp.out &
 sleep 1
 
