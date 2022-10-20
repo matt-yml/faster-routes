@@ -14,7 +14,6 @@ sleep 5
 echo "sleeping 5s"
 sleep 5
 
-
 /home/deve/coords/gso_gym.sh
 echo "sleeping 5s"
 sleep 5

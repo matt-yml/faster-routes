@@ -18,8 +18,8 @@ cat ${cfg}
 # CAM
 #fences=("apex_compark" "apex_dt" "danvers" "parkwaypnt" "ritterpark" "bond" "cary_cbd" "northwoods" "waverly")
 # Raleigh CBD
-#area="raleigh"
-#fences=("ral_CBD" "statefair" "trinity")
+area="raleigh"
+fences=("ral_CBD" "statefair" "trinity" "tryonwheeler")
 # Raleigh NW
 #area="raleigh_NW"
 #fences=("dtwf" "6forks" "crabtree" "glenwood" "neuse" "northhills")
@@ -27,8 +27,8 @@ cat ${cfg}
 #area="gso"
 #fences=("arbor" "downtown" "friendly" "uncg")
 # Cabarrus
-area="cabarrus"
-fences=("cmills" "concord_cbd" "kannapolis_cbd" "liskepark")
+#area="cabarrus"
+#fences=("cmills" "concord_cbd" "kannapolis_cbd" "liskepark")
 # Asheboro
 #area="asheboro"
 #fences=("cbd" "walmart")

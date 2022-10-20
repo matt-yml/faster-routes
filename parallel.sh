@@ -21,8 +21,11 @@
 #nohup ./nr.sh &> nohup-nr.txt &
 #sleep 1
 #nohup ./wf.sh &> nohup-wf.txt &
-nohup ./pitts.sh &> nohup-pitts.out &
+#nohup ./pitts.sh &> nohup-pitts.out &
+#sleep 1
+#nohup ./hp.sh &> nohup-hp.out &
+#sleep 1
+nohup ./char00.sh &> nohup-char00.out &
 sleep 1
-nohup ./hp.sh &> nohup-hp.out &
+nohup ./char01.sh &> nohup-char01.out &
 sleep 1
-
