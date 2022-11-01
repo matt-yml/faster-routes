@@ -14,12 +14,14 @@ cat ${cfg}
 # Apex
 #fences=("apex_compark" "apex_dt" "danvers")
 # Cary
-#fences=("parkwaypnt" "ritterpark" "bond" "cary_cbd" "northwoods" "waverly")
+#area="cary"
+#fences=("parkwaypnt" "ritterpark" "bond" "cary_cbd" "northwoods" "waverly" "caryglenn" "tbrooks")
 # CAM
-#fences=("apex_compark" "apex_dt" "danvers" "parkwaypnt" "ritterpark" "bond" "cary_cbd" "northwoods" "waverly")
+area="cam"
+fences=("apex_compark" "apex_dt" "danvers" "parkwaypnt" "ritterpark" "bond" "cary_cbd" "northwoods" "waverly" "caryglenn" "tbrooks")
 # Raleigh CBD
-area="raleigh"
-fences=("ral_CBD" "statefair" "trinity" "tryonwheeler")
+#area="raleigh"
+#fences=("ral_CBD" "statefair" "trinity" "tryonwheeler")
 # Raleigh NW
 #area="raleigh_NW"
 #fences=("dtwf" "6forks" "crabtree" "glenwood" "neuse" "northhills")
