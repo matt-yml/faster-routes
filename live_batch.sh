@@ -17,8 +17,8 @@ cat ${cfg}
 #area="cary"
 #fences=("parkwaypnt" "ritterpark" "bond" "cary_cbd" "northwoods" "waverly" "caryglenn" "tbrooks")
 # CAM
-area="cam"
-fences=("apex_compark" "apex_dt" "danvers" "parkwaypnt" "ritterpark" "bond" "cary_cbd" "northwoods" "waverly" "caryglenn" "tbrooks")
+#area="cam"
+#fences=("apex_compark" "apex_dt" "danvers" "parkwaypnt" "ritterpark" "bond" "cary_cbd" "northwoods" "waverly" "caryglenn" "tbrooks")
 # Raleigh CBD
 #area="raleigh"
 #fences=("ral_CBD" "statefair" "trinity" "tryonwheeler")
@@ -26,8 +26,8 @@ fences=("apex_compark" "apex_dt" "danvers" "parkwaypnt" "ritterpark" "bond" "car
 #area="raleigh_NW"
 #fences=("dtwf" "6forks" "crabtree" "glenwood" "neuse" "northhills")
 # GSO
-#area="gso"
-#fences=("arbor" "downtown" "friendly" "uncg")
+area="gso"
+fences=("cust_mbob_hood0" "cust_mbob_hood1" "cust_mbob_ghillcem" "arbor" "downtown" "friendly" "uncg")
 # Cabarrus
 #area="cabarrus"
 #fences=("cmills" "concord_cbd" "kannapolis_cbd" "liskepark")
@@ -36,10 +36,13 @@ fences=("apex_compark" "apex_dt" "danvers" "parkwaypnt" "ritterpark" "bond" "car
 #fences=("cbd" "walmart")
 # Chapel Hill
 #area="chapelhill"
-#fences=("cbd" "umall")
+#fences=("cbd" "umall" "svillage")
 # Durham
 #area="durham"
 #fences=("southpoint" "briercreek" "dtdur" "dukegardens" "maplewood" "atc")
+# pittsboro
+#area="pittsboro"
+#fences=("cbd")
 
 i=0
   for fence in ${!fences[@]}
