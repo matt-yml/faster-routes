@@ -26,8 +26,8 @@ cat ${cfg}
 #area="raleigh_NW"
 #fences=("dtwf" "6forks" "crabtree" "glenwood" "neuse" "northhills")
 # GSO
-area="gso"
-fences=("cust_mbob_hood0" "cust_mbob_hood1" "cust_mbob_ghillcem" "arbor" "downtown" "friendly" "uncg")
+#area="gso"
+#fences=("arbor" "downtown" "friendly" "uncg") # "cust_mbob_hood0" "cust_mbob_hood1" "cust_mbob_ghillcem" 
 # Cabarrus
 #area="cabarrus"
 #fences=("cmills" "concord_cbd" "kannapolis_cbd" "liskepark")
@@ -40,9 +40,18 @@ fences=("cust_mbob_hood0" "cust_mbob_hood1" "cust_mbob_ghillcem" "arbor" "downto
 # Durham
 #area="durham"
 #fences=("southpoint" "briercreek" "dtdur" "dukegardens" "maplewood" "atc")
-# pittsboro
-#area="pittsboro"
-#fences=("cbd")
+# chatham co
+#area="chatham"
+#fences=("dtpitts" "powell" "chathampk" "briarchapel" "fearrington" "bynum")
+# alamance
+#area="alamance"
+#fences="elon"
+# fuquay-varina
+#area="fv"
+#fences=("fvcore")
+#harnett co
+area="harnett"
+fences=("angier" "campbell")
 
 i=0
   for fence in ${!fences[@]}
