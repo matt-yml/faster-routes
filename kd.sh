@@ -5,13 +5,13 @@
 base_coords="/home/deve/devrepo/coords/maps/pk/volumes/rdm/coords"
 base_fr="/home/deve/devrepo/coords/submodules/faster-routes"
 
-### Mebane and Hillsboro spawn points
+### knightdale
 # Map desired config into container
-cfg=${base_fr}/config_sp_ukn.json
+cfg=${base_fr}/config_sp_kn.json
 # Specify sub directory
-area=spawnpoints
+area=knightdale
 # Pick your fence.
-fence=sp-kd
+fence=knightdale
 cat ${cfg}
 echo "area: ${area}"
 echo "fence: ${fence}"

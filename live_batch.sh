@@ -50,8 +50,11 @@ cat ${cfg}
 #area="fv"
 #fences=("fvcore")
 #harnett co
-area="harnett"
-fences=("angier" "campbell")
+#area="harnett"
+#fences=("angier" "campbell")
+#holly springs
+area=hollysprings
+fences=("stinson" "arborcreek" "braxtonvillage" "southpark" "12oaks")
 
 i=0
   for fence in ${!fences[@]}
