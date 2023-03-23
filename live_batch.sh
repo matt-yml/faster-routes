@@ -53,8 +53,11 @@ cat ${cfg}
 #area="harnett"
 #fences=("angier" "campbell")
 #holly springs
-area=hollysprings
-fences=("stinson" "arborcreek" "braxtonvillage" "southpark" "12oaks")
+#area=hollysprings
+#fences=("stinson" "arborcreek" "braxtonvillage" "southpark" "12oaks")
+# winston salem
+area="wsm"
+fences=("dtlews" "dtclem")
 
 i=0
   for fence in ${!fences[@]}

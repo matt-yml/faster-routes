@@ -22,4 +22,8 @@ sleep 5
 echo "sleeping 5s"
 sleep 5
 
+/home/deve/coords/wsm_gym.sh
+echo "sleeping 5s"
+sleep 5
+
 /home/deve/coords/rdu_gym.sh
