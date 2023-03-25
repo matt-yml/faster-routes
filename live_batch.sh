@@ -32,8 +32,8 @@ cat ${cfg}
 #area="cabarrus"
 #fences=("cmills" "concord_cbd" "kannapolis_cbd" "liskepark")
 # Asheboro
-#area="asheboro"
-#fences=("cbd" "walmart")
+area="asheboro"
+fences=("cbd" "walmart" "zoo-in" "zoo-ext")
 # Chapel Hill
 #area="chapelhill"
 #fences=("cbd" "umall" "svillage")
@@ -56,8 +56,8 @@ cat ${cfg}
 #area=hollysprings
 #fences=("stinson" "arborcreek" "braxtonvillage" "southpark" "12oaks")
 # winston salem
-area="wsm"
-fences=("dtlews" "dtclem")
+#area="wsm"
+#fences=("dtlews" "dtclem")
 
 i=0
   for fence in ${!fences[@]}
