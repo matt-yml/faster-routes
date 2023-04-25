@@ -57,7 +57,7 @@ cat ${cfg}
 #fences=("stinson" "arborcreek" "braxtonvillage" "southpark" "12oaks")
 # winston salem
 area="wsm"
-fences=("dtlews" "dtclem" "hwoods")
+fences=("dtlews" "dtclem" "hwoods" "wellesley")
 
 i=0
   for fence in ${!fences[@]}

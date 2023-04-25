@@ -7,11 +7,11 @@ base_fr="/home/deve/devrepo/coords/submodules/faster-routes"
 
 ### raleigh
 # Map desired config into container
-cfg=${base_fr}/config_sp_ukn.json
+cfg=${base_fr}/config_sp_kn.json
 # Specify sub directory
-area=z_utils
+area=raleigh
 # Pick your fence.
-fence=sp-raleigh
+fence=ral_cntl
 cat ${cfg}
 echo "area: ${area}"
 echo "fence: ${fence}"
