@@ -2,8 +2,8 @@
 # Automate the routing process. Pass straight to sort
 # NOTE: Docker container that actually runs the scripts must already be built
 
-base_coords="/home/deve/coords/coords"
-base_fr="/home/deve/coords"
+base_coords="/home/deve/devrepo/coords/maps/pk/volumes/rdm/coords"
+base_fr="/home/deve/devrepo/coords/submodules/faster-routes"
 
 # Map desired config into container
 cfg=${base_fr}/config_sp_kn.json
@@ -21,7 +21,7 @@ cat ${cfg}
 #fences=("apex_compark" "apex_dt" "danvers" "parkwaypnt" "ritterpark" "bond" "cary_cbd" "northwoods" "waverly" "caryglenn" "tbrooks")
 # Raleigh CBD
 #area="raleigh"
-#fences=("ral_CBD" "statefair" "trinity" "tryonwheeler")
+#fences=("ral_cntl")
 # Raleigh NW
 #area="raleigh_NW"
 #fences=("dtwf" "6forks" "crabtree" "glenwood" "neuse" "northhills")
@@ -56,8 +56,13 @@ cat ${cfg}
 #area=hollysprings
 #fences=("stinson" "arborcreek" "braxtonvillage" "southpark" "12oaks")
 # winston salem
-area="wsm"
-fences=("dtlews" "dtclem" "hwoods" "wellesley")
+#area="wsm"
+#fences=("dtlews" "dtclem")
+#fences=("dtlews" "dtclem" "hwoods" "wellesley")
+# charlotte
+area="clt"
+#fences=("cascnlake" "hollyrdg" "nlakemall" "smithcor" "brytontrce" "plumcrk")
+fences=("cascnlake" "nlakemall" "brytontrce")
 
 i=0
   for fence in ${!fences[@]}
