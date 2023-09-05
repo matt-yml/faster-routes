@@ -12,7 +12,7 @@ cfg=${base_fr}/config_gym.json
 area=asheboro
 
 # Pick your fence.
-fence=ash_plus_zoo
+fence=ash_rmn
 
 echo "*****Starting ${fence}*****"
 date

@@ -62,7 +62,7 @@ cat ${cfg}
 # charlotte
 area="clt"
 #fences=("cascnlake" "hollyrdg" "nlakemall" "smithcor" "brytontrce" "plumcrk")
-fences=("cascnlake" "nlakemall" "brytontrce")
+fences=("plumcrk")
 
 i=0
   for fence in ${!fences[@]}
