@@ -26,8 +26,13 @@ cat ${cfg}
 #area="raleigh_NW"
 #fences=("dtwf" "6forks" "crabtree" "glenwood" "neuse" "northhills")
 # GSO
-#area="gso"
-#fences=("arbor" "downtown" "friendly" "uncg") # "cust_mbob_hood0" "cust_mbob_hood1" "cust_mbob_ghillcem" 
+area="gso"
+# gso all
+fences=("arbor" "downtown" "friendly" "uncg" "cust_mbob_hood0" "cust_mbob_ghillcem" "cust_candh_hood")
+# gso main
+#fences=("arbor" "downtown" "friendly" "uncg")
+# gso loyalty fences
+#fences=("cust_mbob_hood0" "cust_mbob_ghillcem" "cust_candh_hood")
 # Cabarrus
 #area="cabarrus"
 #fences=("cmills" "concord_cbd" "kannapolis_cbd" "liskepark")
@@ -60,9 +65,10 @@ cat ${cfg}
 #fences=("dtlews" "dtclem")
 #fences=("dtlews" "dtclem" "hwoods" "wellesley")
 # charlotte
-area="clt"
+#area="clt"
 #fences=("cascnlake" "hollyrdg" "nlakemall" "smithcor" "brytontrce" "plumcrk" "freedom_park" "airport_terminal" "elmwood_cem" "forest_lawn_park" "no_meck_park" "hornets_nest_park")
-fences=("cascnlake" "nlakemall" "brytontrce" "elmwood_cem" "forest_lawn_park")
+#fences=("cascnlake" "nlakemall" "brytontrce" "elmwood_cem" "forest_lawn_park")
+
 
 i=0
   for fence in ${!fences[@]}
